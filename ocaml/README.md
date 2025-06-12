@@ -148,9 +148,9 @@ We need to add a section called `depends`. I will admit the syntax is odd, as `d
       (public_name <project_name>)
       (name main)
       (libraries cmdliner fmt))
-```
+    ```
     Official documentation: https://dune.readthedocs.io/en/stable/tutorials/dune-package-management/dependencies.html
 
 ### 4.2. Adding local library modules
 
-In order to include our own library modules in the main code to run in `./bin/`, we just need to add to the `libraries` section of the `./bin/dune` file, like in the section 4.1 Adding third party dependencies above.
+In order to include our own library modules in the main code to run in `./bin/`, we just need to add to the `libraries` section of the `./bin/dune` file, like in the section **4.1 Adding third party dependencies** above.
