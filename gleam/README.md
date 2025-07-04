@@ -446,7 +446,7 @@ Also note that when using `use` with `result.try`, you would have to return a `R
 
 **So, for me at least, I realised when doing error handling in Gleam, always try to use the `use` keyword with `result.try`. Then do the pattern matching towards the very end.**
 
-### Why `Result` type is better than throwing exceptions
+## Why `Result` type is better than throwing exceptions
 
 The main reason is because, you know exactly if and how a function will fail once executed.
 
@@ -454,7 +454,7 @@ Many people probably do not know that `JSON.parse` in JavaScript actually throws
 
 Thus, it is much better for the function signature to return a `Result`, as if to say: "Hey, I can either succeed and return the value you want, or fail and return an Error type that is properly defined". Hence, the user of the function knows explicitly if the function will fail and all possible error values to handle.
 
-### Bonus: Making your own `defer` function
+## Bonus: Making your own `defer` function
 
 I have to give full credit to [Issac Harris-Holt](https://www.youtube.com/@IsaacHarrisHolt) for this, I only knew about making my own `defer` function after watching his video on the `use` keyword. Link to the video found [here](https://www.youtube.com/watch?v=-rtVWja_vJI).
 
