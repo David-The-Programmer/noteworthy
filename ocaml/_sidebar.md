@@ -1,2 +1,0 @@
-- [Home](/README.md)
-- [OCAML](/ocaml/README.md)

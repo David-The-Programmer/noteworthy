@@ -1,2 +1,3 @@
 - [Home](/README.md)
 - [OCAML](/ocaml/README.md)
+- [Gleam](/gleam/README.md)
