@@ -458,7 +458,7 @@ Thus, it is much better for the function signature to return a `Result`, as if t
 
 I have to give full credit to [Issac Harris-Holt](https://www.youtube.com/@IsaacHarrisHolt) for this, I only knew about making my own `defer` function after watching his video on the `use` keyword. Link to the video found [here](https://www.youtube.com/watch?v=-rtVWja_vJI).
 
-#### What is `defer` and why is it useful?
+### What is `defer` and why is it useful?
 
 In the Go programming language, there is the `defer` keyword. It allows you to defer the execution of a function inside another function such the inner function will only execute after all of the code after the inner function finishes execution. 
 
@@ -504,7 +504,7 @@ function 2
 function 1
 ```
 
-#### Defining the `defer` function in Gleam
+### Defining the `defer` function in Gleam
 
 Issac Harris Holt basically shows this code snippet of the `defer` function you can implement yourself in Gleam:
 ```gleam
@@ -515,7 +515,7 @@ fn defer(cleanup: fn() -> Nil, body: fn() -> a) -> a {
 }
 ```
 
-#### Using `use` with the `defer` function
+### Using `use` with the `defer` function
 
 Without the `use` keyword, the `defer` function is a bit clunky to use (no pun intended, hehe). Building from the online store backend API example, let's say we need to implement some function for some API add users to the backend database when users sign up, and we need to make sure we close the database connection after the function finishes execution.
 
